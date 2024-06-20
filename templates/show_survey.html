@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ survey.title }}</h1>
+<p>{{ survey.instructions }}</p>
+<a href="/question/0" class="start-survey-btn">Start Survey!</a>
+{% endblock %}
