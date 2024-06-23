@@ -2,6 +2,8 @@
 
 {% block content %}
 <h1>{{ survey.title }}</h1>
-<p>{{ survey.instructions }}</p>
-<a href="/question/0" class="start-survey-btn">Start Survey!</a>
+<p class="survey-instructions">{{ survey.instructions }}</p>
+<form action="/start" method="post">
+    <button type="submit" class="start-survey-btn">Start Survey!</button>
+</form>
 {% endblock %}
